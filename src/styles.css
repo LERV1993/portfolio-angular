@@ -1,0 +1,165 @@
+:root{
+    --first-c: rgb(255, 255, 255);
+    --second-c-:rgb(253, 0, 147);
+    --third-c-:rgb(0, 102, 255);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image:
+    url("./assets/imagenes/background-portfolio1.jpeg");
+}
+#nav-bar {
+    display:flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+#nav { 
+    display: flex;
+    width: 70%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#nav li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    width:100%;
+    color: var(--first-c);
+    align-items: center;
+    justify-content: center;
+}
+#nav li a:hover {
+    background-color: white;
+    color: black;
+    border: 0.1em solid black;
+    opacity: 0.6;
+    text-decoration: underline;
+    transition: .6s;
+}
+#banner {
+    width: 85%;
+    height: 550px;
+    color: var(--first-c);
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    margin:3% auto;
+}
+#banner .block-banner {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#banner .block-banner h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+}
+#banner .block-banner p{
+    display: inline;
+    justify-content: center;
+    font-size: 6rem;
+    font-family: 'Alfa Slab One', sans-serif;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
+.comillas {
+    color: var(--second-c-);
+    font-size: 6rem;
+    font-weight:  bolder;
+}
+.admiracion {
+    color: var(--third-c-);
+    font-size: 6rem;
+    font-weight:  bolder;
+}
+.about-me {
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+.img-perfil-banner {
+    margin-top: -110px;
+}
+.img-perfil-banner p {
+    width: 100%;
+    text-align: center;
+}
+#informacion {
+    width: 70%;
+    margin: 3% auto;
+    text-align: start;
+    vertical-align: middle;
+}
+#informacion p {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--first-c);
+    font-family: 'Sora', sans-serif;
+}
+.bloque {
+    width: 85%;
+    margin: 3% auto;
+    border-top-left-radius:40%;
+    border-bottom-right-radius: 40%;
+    background-color: black;
+    opacity: 0.8;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    color: var(--first-c);
+    
+}
+.titulo-contenedores {
+    background-color:  var(--second-c-);
+    opacity: 0.9;
+    width: 9em;
+    border-radius: 5rem;
+    display: flex;
+    height: 6rem;
+    margin: 3% 3%;
+    padding-left: 5%;
+    align-items: center;
+}
+.contenedor {
+    width: 90%;
+    padding-bottom: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% 3%;
+}
+.contenedor p {
+    margin: 3% 5%;
+}
+.logo {
+    border-radius: 100%;
+    border: 0.5rem solid var(--third-c-);
+    width: 15%;
+    height: 15%;
+}
+
+

@@ -1,0 +1,103 @@
+{
+	"Nav": {
+		"Acerca": "Acerca",
+		"Experiencia": "Experiencia",
+		"Educacion": "Educación",
+		"Habilidades": "Habilidades",
+		"Proyectos": "Proyectos"
+	},
+	"Banner": {
+		"Saludo_1": "Hola",
+		"Admiracion": "!",
+		"Saludo_2": "soy",
+		"Comilla": "'",
+		"Saludo_3": "LERV",
+		"Saludo_4": ".",
+		"Subtitulo": "Desarrollador full stack.",
+		"IMG_LERV": "../assets/imagenes/LERV.jpeg",
+		"Pie_foto_1": "Lucas Emanuel Ruiz Vicente.",
+		"Pie_foto_2": "Desarrollador de software.",
+		"Presentacion_1": "Tengo 29 años y soy de Buenos Aires, Argentina.",
+		"Presentacion_2": "Cuento con 10 años de experiencia en el servicio de posventa y servicio técnico.",
+		"Presentacion_3": "Me interesan las propuestas que involucren autosustentabilidad e inteligencia artificial."
+	},
+	"Experiencia": {
+		"Titulo": "Experiencia:",
+		"BGH": {
+			"IMG_BGH": "../assets/imagenes/bgh.jpg",
+			"Cargo": "Supervisor de division celular.",
+			"Empresa": "BGH S.A. · Jornada completa.",
+			"InicioFin": "may. 2013 - nov. 2017 · 4 años 7 meses.",
+			"Lugar": "Provincia de Buenos Aires, Argentina:",
+			"Desc_1": "- Reparación de celulares multi-marca.",
+			"Desc_2": "- Responsable de stock, seguimiento de casos y asignación de piezas.",
+			"Desc_3": "- Atencion al cliente tanto presencial como por distintos canales de comunicación (mail, teléfono o plataforma digital).",
+			"Desc_4": "- Responsable de los indicadores."
+		},
+		"Trocafone": {
+			"IMG_Trocafone": "../assets/imagenes/trocafone.jpg",
+			"Cargo": "Técnico administrativo.",
+			"Empresa": "Trocafone Inc. · Jornada completa.",
+			"InicioFin": "nov. 2017 - sept. 2018 · 11 meses.",
+			"Lugar": "Provincia de Buenos Aires, Argentina:",
+			"Desc_1": "- Testeo de terminales móviles y clasificación según calidad.",
+			"Desc_2": "- Control y gestión de stock.",
+			"Desc_3": "- Seguimiento de casos en Mercado libre ( envíos , recepción y consultas generales).",
+			"Desc_4": "- Elaboración de informes, supervisión de producción y objetivos."
+		},
+		"Brightstar": {
+			"IMG_Brightstar": "../assets/imagenes/brightstar.jpg",
+			"Cargo": "Técnico electrónico.",
+			"Empresa": "Brightstar SA. · Jornada completa.",
+			"InicioFin": "sept. 2018 - ago. 2021 · 3 años.",
+			"Lugar": "Provincia de Buenos Aires, Argentina:",
+			"Desc_1": "- Reparación de teléfonos multi-marca.",
+			"Desc_2": "- Realización de inventarios.",
+			"Desc_3": "- Gestión de stock, asignación de piezas, seguimiento de casos y procesos.",
+			"Desc_4": "- Responsable de calidad del laboratorio celular.",
+			"Desc_5": "- Montaje de pallets y tareas generales de depósito."
+		},
+		"Tecnoimagen": {
+			"IMG_Tecnoimagen": "../assets/imagenes/tecnoimagen.jpg",
+			"Cargo": "Soporte técnico de ultrasonido.",
+			"Empresa": "Tecnoimagen SA. · Jornada completa.",
+			"InicioFin": "oct. 2021 - actualidad.",
+			"Lugar": "Caballito, Capital Federal:",
+			"Desc_1": "- Encargado de recepción y diagnóstico de ecografos Sonosite.",
+			"Desc_2": "- Soporte a distancia de distintos distribuidores.",
+			"Desc_3": "- Seguimiento de casos con comunicación directa con importantes clientes.",
+			"Desc_4": "- Relevamiento de errores a fábrica.",
+			"Desc_5": "- Reparación puesta en marcha y testeo funcional de equipamiento."
+		}
+	},
+	"Educacion": {
+		"Titulo": "Educación:",
+		"ETN28": {
+			"IMG_ET28": "../assets/imagenes/ET28 republica francesa.jpg",
+			"Carrera_Titulo": "Título : Técnico electrónico.",
+			"Institucion": "Intitución: Escuela Técnica N°28 'República Francesa'.",
+			"Estado": "Estado: Recibido.",
+			"Fecha": "Fecha de finalización: 2012."
+		},
+		"IFTSN4": {
+			"IMG_IFTSN4": "../assets/imagenes/IFTS N4.png",
+			"Carrera_Titulo": "Título : Tecnicatura Superior en Desarrollo de Software.",
+			"Institucion": "Intitución: Instituto de fromación técnica superior N°4.",
+			"Estado": "Estado: En curso."
+		},
+		"FreeCodeCamp": {
+			"IMG_FCC": "../assets/imagenes/freecodecamp.png",
+			"Carrera_Titulo": "Certificación : Algoritmos y estructura de datos - Diseño web responsivo.",
+			"Institucion": "Plataforma: FreecodeCamp.",
+			"Estado": "Estado: Realizado.",
+			"Fecha": "Fecha de finalizacion: Agosto de 2021."
+		},
+		"ArgentinaPrograma": {
+			"IMG_AP": "../assets/imagenes/argentina_programa.jpg",
+			"Carrera_Titulo": "Certificación: Desarrollador full stack. ",
+			"Institucion": "Intitución: Cessi / Inti.",
+			"Estado": "Estado: En Curso.",
+			"Fecha": "Fecha de finalizacion: Febrero de 2022."
+		}
+	}
+}
