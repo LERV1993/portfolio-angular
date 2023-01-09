@@ -1,0 +1,42 @@
+.footer{
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 0 1rem 0;
+    background-color: black;
+    opacity: 0.9;
+    color: var(--first-c);
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: var(--first-c);
+}
+.izq{
+    width: 30%;
+}
+.med{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+a{
+    margin: 3%;
+    color: var(--first-c-);
+}
+.der{
+    width: 30%;
+}
+.med a :hover{
+    color:var(--third-c-);
+    transition: .6s;
+}
+@media (max-width: 805px){
+    .izq{
+        display: none;
+    }
+    .der{
+        display: none;
+    }
+}

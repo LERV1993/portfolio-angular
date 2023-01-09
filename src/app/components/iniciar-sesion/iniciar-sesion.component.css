@@ -1,0 +1,16 @@
+.contenedor{
+    background-image: linear-gradient(to right top, #270537, #37015d, #400087, #3d00b7, #1712eb);
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin: 0;
+}
+form {
+    margin: auto;
+    width: 40%;
+    padding: 5%;
+    border: 2px solid rgba(211, 211, 211, 0.577);
+    border-radius: 4%;
+    background-color:whitesmoke;
+    opacity: 0.9;
+}

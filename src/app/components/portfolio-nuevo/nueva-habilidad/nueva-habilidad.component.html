@@ -1,0 +1,20 @@
+<div class="contenedor" *ngIf="isLogged">
+    <form class="formulario" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Procentaje:  </label>
+            <input type="number" name="porcentaje" class="form-control" id="porcentaje" [(ngModel)]="porcentaje" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Imagen de la tecnologia (URL): </label>
+            <input type="text" name="imagen" class="form-control" id="imagen" [(ngModel)]="imagen" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput3">Nombre de la tecnología: </label>
+            <input type="text" name="tecnologia" class="form-control" id="tecnologia" [(ngModel)]="tecnologia" required>
+        </div>
+        <div class="acciones">
+            <input type="submit" class="btn btn-success" value="Agregar Habilidad">
+            <button type="button" class="btn btn-danger" routerLink="/portfolio">Cancelar</button>
+        </div>
+    </form>
+</div>

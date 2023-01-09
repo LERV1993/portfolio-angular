@@ -1,0 +1,38 @@
+<div class="bloque" id="skills-hs">
+    <h1 class="titulo-contenedores">Hard Skills</h1>
+<div class="row">
+ <div *ngFor="let habilidad of myHabilidades" class="text-center col-sm-4 colmd-4 col-lg-4">
+    <circle-progress
+    [percent]="habilidad.porcentaje"
+    [radius]="60"
+    [space]="-10"
+    [showImage]="true"
+    [imageSrc]="habilidad.imagen"
+    [imageHeight]="80"
+    [imageWidth]="80"
+    [outerStrokeGradient]="true"
+    [outerStrokeWidth]="10"
+    [outerStrokeColor]="'#FD0093'"
+    [outerStrokeGradientStopColor]="'#0098FF'"
+    [innerStrokeColor]="'#e7e8ea'"
+    [innerStrokeWidth]="10"
+    [title]="'UI'"
+    [animateTitle]="false"
+    [animationDuration]="1000"
+    [showUnits]="false"
+    [showBackground]="false"
+    [clockwise]="false"
+    [startFromZero]="false"
+    [lazy]="true">
+    </circle-progress>
+    <p>{{habilidad.tecnologia}}</p>
+    <div class="acciones" *ngIf="isLogged">
+        <button class="btn btn-warning" routerLink="/editarskill/{{habilidad.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="btn btn-danger" (click)="delete(habilidad.id)"><i class="fa-regular fa-trash-can"></i></button>
+    </div>
+ </div>
+</div>
+<div class="acciones2" *ngIf="isLogged">
+    <button type="button" class="btn btn-success" routerLink="/crearskill"><i class="fa-solid fa-plus"></i> Agregar Habilidad</button>
+</div>
+</div>

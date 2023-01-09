@@ -1,0 +1,42 @@
+
+<div class="contenedor">
+<form [formGroup]="form" (ngSubmit)="onLoggin()" novalidate>
+  <h1>Iniciar Sesión</h1>
+  <div class="mb-3">
+    <label for="exampleInputUserName1" class="form-label" for="nombreUsuario">Nombre de usuario</label>
+    <input type="user" 
+    formControlName="nombreUsuario" 
+    [ngClass]="{'is-invalid': NombreUsuario?.errors && NombreUsuario?.touched, 'is-valid': !NombreUsuario?.errors && NombreUsuario?.touched}"
+     class="form-control" 
+     id="nombreUsuario" 
+     aria-describedby="nombreUsuario">
+    <div *ngIf="NombreUsuario?.errors && NombreUsuario?.touched">
+        <p *ngIf="NombreUsuario?.hasError('required')" class="text-danger">
+          El nombre de usuario es requerido.
+        </p>
+        <p *ngIf="NombreUsuario?.errors?.['minlength']" class="text-danger">
+          El formato del nombre de usuario debe ser válido.
+        </p>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" for="password">Contraseña</label>
+    <input type="password" 
+    formControlName="password" 
+    name="password"
+    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+     class="form-control" 
+     id="password"
+     aria-describedby="password">
+    <div *ngIf="Password?.errors && Password?.touched">
+      <p *ngIf="Password?.hasError('required')" class="text-danger">
+        La contraseña es requerida.
+      </p>
+      <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+        La contraseña debe tener 8 o más carácteres.
+      </p>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+</form>
+</div>

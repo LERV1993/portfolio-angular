@@ -1,0 +1,26 @@
+:root{
+    --first-c: rgb(255, 255, 255);
+    --second-c-:rgb(253, 0, 147);
+    --third-c-:rgb(0, 102, 255);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#portfolio {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-image:
+    url("/assets/imagenes/background-portfolio1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+<div class="bloque" id="experience-LERV">
+   <h1 class="titulo-contenedores">Experiencia</h1>
+    <div
+    *ngFor="let experiencia of myExp"
+     class="contenedor">
+        <img [src]="experiencia.imagen" alt="logo-empresa" class="logo">
+        <p class="experiencia-5">
+           <span style="font-weight: bold;">Cargo:</span>   {{experiencia.cargo}} <br>
+           <span style="font-weight: bold;">Empresa y jornada:</span>  {{experiencia.empresa}} <br>
+           <span style="font-weight: bold;">Inicio y fin de la relación:</span>  {{experiencia.iniciofin}} <br>
+           <span style="font-weight: bold;">Lugar:</span>  {{experiencia.lugar}} <br>
+           <span style="font-weight: bold;">Tareas: </span><br>
+            •  {{experiencia.desc_1}} <br>
+            •  {{experiencia.desc_2}} <br> 
+            •  {{experiencia.desc_3}} <br>
+            •  {{experiencia.desc_4}} <br>
+            •  {{experiencia.desc_5}}
+        </p>
+        <div class="acciones" *ngIf="isLogged">
+        <button class="btn btn-warning" routerLink="/editarexp/{{experiencia.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="btn btn-danger" (click)="delete(experiencia.id)"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="acciones2" *ngIf="isLogged">
+        <button type="button" class="btn btn-success" routerLink="/crearexp"><i class="fa-solid fa-plus"></i> Agregar Experiencia</button>
+    </div>
+  </div>

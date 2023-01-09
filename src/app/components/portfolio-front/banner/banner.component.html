@@ -1,0 +1,19 @@
+<div id="banner">
+    <div class="block-banner">
+        <p class="banner-greet">{{myBanner.titulo1}} <span class="admiracion">!</span> <br>{{myBanner.titulo2}} <span class="comillas">'</span>{{myBanner.titulo3}}<span class="comillas">'</span>.</p>
+        <h3 class="banner-greet" style="text-align: center;">{{myBanner.subtitulo}}</h3>
+    </div>
+    <div class="about-me">
+        <div class="img-perfil-banner">
+            <img [src]="myBanner.imagen" alt="Perfil-LERV" class="rounded-circle" style="height: 225px;">
+            <p>{{myBanner.pie_foto1}}<br>{{myBanner.pie_foto2}}</p>
+        </div>    
+        <div id="informacion">
+            <p>{{myBanner.descripcion1}}<br>{{myBanner.descripcion2}}<br>{{myBanner.descripcion3}}</p>
+        </div>
+    </div> 
+    <div class="acciones" *ngIf="isLogged">
+        <button class="btn btn-warning" routerLink="/editarbanner/{{myBanner.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="btn btn-danger" (click)="delete(myBanner.id)"><i class="fa-regular fa-trash-can"></i></button>
+    </div>
+  </div>

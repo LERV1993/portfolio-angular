@@ -1,0 +1,19 @@
+<div class="bloque" id="education-LERV">
+    <h1 class="titulo-contenedores"> Educacion </h1>
+    <div *ngFor="let educacion of myEducacion"  class="contenedor">
+        <img [src]="educacion.imagen" alt="logo-institucion" class="logo">
+        <p>
+            Título: {{educacion.titulo}}<br>
+            Institucion: {{educacion.institucion}}<br>
+            Estado: {{educacion.estado}}<br>
+            Fecha de finalizacion: {{educacion.fecha}}<br>
+        </p>
+        <div class="acciones" *ngIf="isLogged">
+            <button class="btn btn-warning" routerLink="/editareducacion/{{educacion.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn btn-danger" (click)="delete(educacion.id)"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="acciones2" *ngIf="isLogged">
+        <button type="button" class="btn btn-success" routerLink="/crearedu"><i class="fa-solid fa-plus"></i> Agregar Educacion</button>
+    </div>
+  </div>

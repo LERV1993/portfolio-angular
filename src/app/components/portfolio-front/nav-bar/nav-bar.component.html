@@ -1,0 +1,23 @@
+<div id="nav-bar">
+    <ul id="nav">
+        <li id="about">
+            <a href="#informacion"> Acerca </a>
+        </li>
+        <li id="experience">
+            <a href="#experience-LERV"> Experiencia </a>
+        </li>
+        <li id="education">
+            <a href="#education-LERV"> Educación </a> 
+        </li>
+        <li id="skills">
+            <a href="#skills-hs"> Habilidades </a> 
+         </li>
+        <li id="projects">
+            <a href="#projects-LERV"> Proyectos </a> 
+        </li>
+        <li>
+             <button class="btn btn-success" (click)="login()" *ngIf="!isLogged"><span><i class="fa-solid fa-lock"></i> Acceder </span></button>
+             <button class="btn btn-warning" (click)="onLogOut()" *ngIf="isLogged"><span><i class="fa-solid fa-lock-open"></i> Cerrar sesión </span></button>
+        </li>
+    </ul>
+</div>

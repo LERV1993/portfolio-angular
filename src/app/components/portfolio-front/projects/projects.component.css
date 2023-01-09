@@ -1,0 +1,55 @@
+.bloque {
+    width: 85%;
+    margin: 3% auto;
+    border-top-left-radius:40%;
+    border-bottom-right-radius: 40%;
+    background-color: black;
+    opacity: 0.9;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    color: var(--first-c);
+    
+}
+.titulo-contenedores {
+    background-image: linear-gradient(to bottom right,var(--second-c-),var(--third-c-));
+    width: 9em;
+    border-radius: 5rem;
+    display: flex;
+    height: 6rem;
+    margin: 3% 3%;
+    padding-left: 5%;
+    align-items: center;
+}
+.contenedor {
+    width: 90%;
+    padding-bottom: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% 3%;
+}
+.contenedor p {
+    margin: 3% 5%;
+}
+.logo {
+    border-radius: 100%;
+    border: 0.5rem solid var(--third-c-);
+    width: 15%;
+    height: 15%;
+}
+a{
+    text-decoration: none;
+    color: var(--first-c);
+}
+.acciones button{
+    display: block;
+    margin-bottom: 0.2rem;
+}
+.acciones2{
+    width: 80%;
+    text-align: center;
+}
+.acciones2 button{
+    margin-bottom: 0.5rem;
+}

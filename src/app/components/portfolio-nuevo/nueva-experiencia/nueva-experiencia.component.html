@@ -1,0 +1,48 @@
+<div class="contenedor" *ngIf="isLogged">
+    <form class="formulario" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Logo empresa (URL): </label>
+            <input type="text" name="imagen" class="form-control" id="logo" [(ngModel)]="imagen" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Cargo: </label>
+            <input type="text" name="cargo" class="form-control" id="cargo" [(ngModel)]="cargo" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput3">Empresa: </label>
+            <input type="text" name="empresa" class="form-control" id="empresa" [(ngModel)]="empresa" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput4">Inicio y fin de la realación: </label>
+            <input type="text" name="iniciofin" class="form-control" id="iniciofin" [(ngModel)]="iniciofin" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput5">Lugar de trabajo: </label>
+            <input type="text" name="lugar" class="form-control" id="lugar" [(ngModel)]="lugar" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput6">Descripción de tareas 1: </label>
+            <input type="text" name="desc_1" class="form-control" id="desc1" [(ngModel)]="desc_1" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput7">Descripción de tareas 2: </label>
+            <input type="text" name="desc_2" class="form-control" id="desc2" [(ngModel)]="desc_2" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput8">Descripción de tareas 3: </label>
+            <input type="text" name="desc_3"class="form-control" id="desc3" [(ngModel)]="desc_3" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput9">Descripción de tareas 4: </label>
+            <input type="text" name="desc_4" class="form-control" id="desc4" [(ngModel)]="desc_4" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput10">Descripción de tareas 5: </label>
+            <input type="text" name="desc_5" class="form-control" id="desc5" [(ngModel)]="desc_5" required>
+        </div>
+        <div class="acciones">
+            <input type="submit" class="btn btn-success" value="Agregar Experiencia">
+            <button type="button" class="btn btn-danger" routerLink="/portfolio">Cancelar</button>
+        </div>
+    </form>
+</div>

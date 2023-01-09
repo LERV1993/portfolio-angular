@@ -1,0 +1,19 @@
+<div class="bloque" id="projects-LERV">
+    <h1 class="titulo-contenedores">Proyectos</h1>
+    <div *ngFor="let proyecto of myProyectos" class="contenedor">
+        <img [src]="proyecto.imagen" alt="logo-GitHub" class="logo">
+        <p class="experiencia-1">
+            {{proyecto.titulo}}<br>
+            •{{proyecto.lenguaje}}<br>
+            •{{proyecto.descripcion}}<br>
+            <a [href]="proyecto.url" target="_blank">{{proyecto.repo}}</a>
+        </p>
+        <div class="acciones" *ngIf="isLogged">
+            <button class="btn btn-warning" routerLink="/editarproyecto/{{proyecto.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn btn-danger" (click)="delete(proyecto.id)"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="acciones2" *ngIf="isLogged">
+        <button type="button" class="btn btn-success" routerLink="/crearproyecto"><i class="fa-solid fa-plus"></i> Agregar Proyecto</button>
+    </div>
+</div>
