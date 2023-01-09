@@ -15,7 +15,7 @@
           El nombre de usuario es requerido.
         </p>
         <p *ngIf="NombreUsuario?.errors?.['minlength']" class="text-danger">
-          El formato del nombre de usuario debe ser válido.
+          El formato del nombre de usuario debe tener 7 o más carácteres.
         </p>
     </div>
   </div>
@@ -33,7 +33,7 @@
         La contraseña es requerida.
       </p>
       <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
-        La contraseña debe tener 8 o más carácteres.
+        La contraseña debe tener 7 o más carácteres.
       </p>
     </div>
   </div>

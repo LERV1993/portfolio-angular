@@ -8,7 +8,7 @@ import { Skills } from '../models/skills.model';
 })
 export class SkillsService {
 
-  URL = 'http://localhost:8080';
+  URL = 'https://portfoliobackend-java-production.up.railway.app';
 
   constructor(private http:HttpClient) { }
   obtenerDatos(): Observable<any>{

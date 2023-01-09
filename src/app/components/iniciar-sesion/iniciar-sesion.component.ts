@@ -28,8 +28,8 @@ export class IniciarSesionComponent implements OnInit {
               private router: Router) {
     this.form=this.formBuilder.group({
 
-      nombreUsuario:['',[Validators.required,Validators.minLength(3)]],
-      password:['',[Validators.required,Validators.minLength(3)]],
+      nombreUsuario:['',[Validators.required,Validators.minLength(7)]],
+      password:['',[Validators.required,Validators.minLength(7)]],
       deviceInfo:this.formBuilder.group({
       })
 

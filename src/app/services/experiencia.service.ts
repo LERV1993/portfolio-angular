@@ -7,7 +7,7 @@ import { Experiencia } from '../models/experiencia.model';
   providedIn: 'root'
 })
 export class ExpService {
-  URL = 'http://localhost:8080'
+  URL = 'https://portfoliobackend-java-production.up.railway.app'
 
   constructor(private http:HttpClient) { }
   obtenerDatos(): Observable<any>{

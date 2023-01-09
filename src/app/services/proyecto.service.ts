@@ -8,7 +8,7 @@ import { Proyecto } from '../models/proyecto.model';
 })
 export class ProyectoService {
 
-  URL = 'http://localhost:8080';
+  URL = 'https://portfoliobackend-java-production.up.railway.app';
 
   constructor(private http:HttpClient) { }
   obtenerDatos(): Observable<any>{
